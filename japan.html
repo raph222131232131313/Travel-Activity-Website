@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Japan Wonders - Travelicious</title>
+  <link rel="stylesheet" href="country-detail.css" />
+</head>
+<body>
+  <header>
+    <!-- Your header/nav here -->
+  </header>
+
+  <main class="country-wonders">
+    <h1>Top Wonders of Japan</h1>
+
+    <section class="wonder-card animate-on-scroll">
+      <img src="japan-wonder1.jpg" alt="Mount Fuji" />
+      <div class="wonder-info">
+        <h2>Mount Fuji</h2>
+        <p>Iconic snow-capped mountain and Japan’s tallest peak.</p>
+        <button class="toggle-hotels-btn">More Info</button>
+        <div class="hotels-list hidden">
+          <h3>Nearest Hotels</h3>
+          <ul>
+            <li>
+              <strong>Fuji View Hotel</strong> - 1.2 km away - ★★★★☆ - $120/night
+            </li>
+            <li>
+              <strong>Mountain Lodge</strong> - 2.5 km away - ★★★☆☆ - $90/night
+            </li>
+            <li>
+              <strong>Lake Kawaguchi Inn</strong> - 3.0 km away - ★★★★☆ - $110/night
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+   
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script>
+    
+    document.querySelectorAll('.toggle-hotels-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const hotelsList = button.nextElementSibling;
+        hotelsList.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
